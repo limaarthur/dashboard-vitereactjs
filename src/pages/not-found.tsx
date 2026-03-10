@@ -1,3 +1,14 @@
+import { PageTitle } from '@/components/page-title'
+
 export function NotFound() {
-  return <h1>Página não encontrada!</h1>
+  return (
+    <>
+      <PageTitle title="Página não encontrada" />
+
+      <div>
+        <h1>404</h1>
+        <p>Página não encontrada</p>
+      </div>
+    </>
+  )
 }
