@@ -10,7 +10,8 @@ export function AuthLayout() {
           <span className="font-semibold">dashboard.web</span>
         </div>
         <footer className="text-sm">
-          Painel do parceiro &copy; dashboard.web - {new Date().getFullYear()}
+          Painel do parceiro &copy; dashboard.web -{' '}
+          {new Date().getFullYear()}
         </footer>
       </div>
 
