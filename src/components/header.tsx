@@ -1,6 +1,6 @@
 import { Home, LayoutDashboard, ShoppingCart } from 'lucide-react'
-import { Link } from 'react-router'
 
+import { NavLink } from './nav-link'
 import { Separator } from './ui/separator'
 
 export function Header() {
@@ -12,15 +12,15 @@ export function Header() {
         <Separator orientation="vertical" className="h-6" />
 
         <nav className="flex items-center space-x-4 lg:space-x-6">
-          <Link to="/">
+          <NavLink to="/">
             <Home className="h-4 w-4" />
             Início
-          </Link>
+          </NavLink>
 
-          <Link to="/orders">
+          <NavLink to="/orders">
             <ShoppingCart className="h-4 w-4" />
             Pedidos
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </div>
