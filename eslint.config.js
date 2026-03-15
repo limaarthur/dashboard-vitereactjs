@@ -30,6 +30,17 @@ export default defineConfig([
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
       'react-refresh/only-export-components': 'off',
+
+      'react/jsx-max-props-per-line': ['error', { maximum: 1 }],
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          varsIgnorePattern: 'Schema$',
+          argsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
     },
   },
   eslintConfigPrettier,
